@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uygulama - Selectors</title>
+    
+    <style>
+    
+        body{
+            font-size: 14px;
+            background-color: #f2f2f2;
+        }
+    
+        h1{
+            border: 2px solid gray;
+            padding: 5px;
+        }
+        h2{
+            color:red;
+        }
+        h2.active{
+            border: 2px solid green;
+        }
+        p#paragraf{
+            font-size: 20px;
+        }
+        div h3{
+            background-color: gold;
+        }
+    
+        h1~p {
+            background-color: red;
+        }
+        
+        div p{
+            background-color: green;
+        }
+        ul li{
+            border: 2px solid gray;
+            margin-top: 2px;
+        }
+        
+        .active{
+            background-color: gold;
+        }
+        
+        ul li:first{
+            /* kelime aralıgını arttırma*/
+        }
+        
+         ul li:last{
+            /* harf aralıgını arttırma*/
+        }
+        input[type="text"]{
+            background-color: red;
+        }
+        
+        input:focus{
+            background-color: green;
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+   
+   <p id="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tenetur in adipisci possimus dolorem sunt enim iure illum est veniam.</p>
+    <h1> Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    
+    <h2 class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, minima?</h2>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, minima?</h2>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, minima?</h2>
+    
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+    
+    
+    <p id="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tenetur in adipisci possimus dolorem sunt enim iure illum est veniam.</p>
+    <p class="active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tenetur in adipisci possimus dolorem sunt enim iure illum est veniam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tenetur in adipisci possimus dolorem sunt enim iure illum est veniam.</p>
+    
+    
+    <div>
+        
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tenetur in adipisci possimus dolorem sunt enim iure illum est veniam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tenetur in adipisci possimus dolorem sunt enim iure illum est veniam.</p>
+        
+    </div>
+    
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Quis delectus officia, provident suscipit.</li>
+        <li>Culpa ratione, laudantium beatae nihil!</li>
+    </ul>
+    
+    <input type="text">Lorem ipsum dolor.
+    <input type="password">Lorem ipsum dolor.
+    
+</body>
+</html>
