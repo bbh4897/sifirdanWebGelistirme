@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Responsive Menu</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #navbar ul {
+            list-style: none;
+        }
+
+        #navbar ul li {
+            float: left;
+            padding: 15px 20px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        @media screen and (max-width:400px) {
+            #icon {
+                display: block;
+                /* yer kaplasın */
+                height: 40px;
+                width: 100%;
+                background: url(menu.png) no-repeat 98% center;
+                background-color: #404040;
+                cursor: pointer;
+            }
+
+            #navbar ul {
+                overflow: hidden;
+                background-color: #505050;
+                height: 0px;
+            }
+
+            #navbar ul.open {
+                height: auto;
+            }
+
+            #navbar ul li {
+                float: none;
+                border: 1px solid #404040;
+            }
+
+            #navbar ul li a {
+                color: #fff;
+                padding: 5px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <a id="icon"></a>
+
+    <div id="navbar">
+
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Reference</a>
+            </li>
+        </ul>
+
+        <img src="yazilim.png" style="width: 100%;">
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+    
+        $(document).ready(function(){
+            $("#icon").click(function(){
+                $("#navbar ul").toggleClass("open");
+            });
+        });
+    
+    </script>
+
+
+
+</body>
+
+</html>
