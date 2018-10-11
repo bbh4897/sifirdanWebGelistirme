@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var dogum_yili = prompt("Doğum tarıhınızı gırınız : ");
+        if (2018 - (Number(dogum_yili)) >= 18) {
+            alert("Ehliyet Alabilirsiniz");
+        } else {
+            var yil = (18 - (2018 - (Number(dogum_yili))));
+            alert("Ehkiyet almanıza " + yil + " yıl var");
+        }
+
+    </script>
+</body>
+
+</html>

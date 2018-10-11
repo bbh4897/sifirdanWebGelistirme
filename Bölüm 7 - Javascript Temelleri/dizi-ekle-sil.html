@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var array = ["A", "B", "C"];
+        console.log("Sona eleman eklenıyor: " + array.push("S"));
+        for (var i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+        console.log("Başa eleman eklenıyor: " + array.unshift("L"));
+        for (var i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+        console.log("Baştan eleman siliniyor: " + array.shift());
+        for (var i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+        console.log("Sondan eleman siliniyor: " + array.pop());
+        for (var i = 0; i < array.length; i++) {
+            console.log(array[i]);
+        }
+    </script>
+</body>
+
+</html>
