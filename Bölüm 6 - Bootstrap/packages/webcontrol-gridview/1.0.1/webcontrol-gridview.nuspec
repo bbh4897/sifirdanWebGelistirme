@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WebControl-GridView</id>
+    <version>1.0.1</version>
+    <title>WebControl GridView</title>
+    <authors>WebControl.GridView</authors>
+    <owners>WebControl.GridView</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MVC GridView is a control</description>
+  </metadata>
+</package>
