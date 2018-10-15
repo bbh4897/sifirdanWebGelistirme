@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        #kutu {
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div id="kutu"></div>
+
+    <script>
+        var isKutu = false;
+        var k = document.getElementById('kutu');
+
+        setInterval(function() {
+
+            if (isKutu) {
+                k.style.background = 'green';
+
+            } else {
+                k.style.background = 'red';
+
+            }
+            isKutu = !isKutu;
+
+        }, 1000);
+    </script>
+
+
+</body>
+
+</html>
