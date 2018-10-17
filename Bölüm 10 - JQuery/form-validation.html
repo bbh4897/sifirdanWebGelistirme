@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <style>
+
+        input{
+           padding: 15px;
+           font-size: 25px;
+           border-radius: 5px;
+           border: 1px solid grey;
+           width: 665px;
+       }
+    
+       body{
+           font-size: 180%;
+       }
+        
+        label{
+            display: inline-block;
+            width: 170px;
+        }
+        
+        .form-group{
+            margin-bottom: 15px;
+        }
+        
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        #wrapper{
+            width: 700px;
+            margin: 0 auto;
+            
+        }
+        
+        .error{
+            color: red;
+            text-align: left;
+        }
+    
+    
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="error">
+
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Lütfen Email Giriniz.">
+        </div>
+
+        <div class="form-group">
+            <label for="telefon">Telefon</label>
+            <input type="text" name="telefon" id="telefon" placeholder="Lütfen telefon Giriniz.">
+        </div>
+
+        <div class="form-group">
+            <label for="parola">Parola</label>
+            <input type="text" name="parola" id="parola" placeholder="Lütfen parola Giriniz.">
+        </div>
+
+        <div class="form-group">
+            <label for="paroltekrar">Parola Tekrar</label>
+            <input type="text" name="paroltekrar" id="paroltekrar" placeholder="Lütfen parola nızı tekrar Giriniz.">
+        </div>
+
+        <button id="btn">Kaydet</button>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+
+            $("#btn").click(function() {
+                
+                var err_mssg = "";
+                $(".error").html("");
+                if ($("#email").val() == "") {
+                    err_mssg += "<p> email alanı zorunludur</p>";
+                }
+
+                if (validateEmail($("#email").val()) == false) {
+                    err_mssg += "<p> Mail alanı duzgun gırılmedı</p>";
+                }
+
+                if ($.isNumeric($("#telefon").val()) == false) {
+                    err_mssg += "<p> telefon alanı zorunludur</p>";
+                }
+
+
+                if ($("#parola").val() == "") {
+                    err_mssg += "<p> parola alanı zorunludur</p>";
+                }
+
+
+                if ($("#paroltekrar").val() != $("#parola").val()) {
+                    err_mssg += "<p>Parolalar Uyuşmuyor</p>";
+                }
+
+                if (err_mssg != "") {
+                    $(".error").html(err_mssg);
+
+                }
+            });
+        });
+
+        function validateEmail(email) {
+
+            var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <style>
+        #box {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <button id="animate">Animate</button>
+
+    <div id="box"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#animate").click(function() {
+                $("#box").animate({
+                    left: '800px',
+                    width: '400px'
+                }, 5000, 
+                    function(){
+                    alert("Hello World!")
+                })
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+
+
+</html>

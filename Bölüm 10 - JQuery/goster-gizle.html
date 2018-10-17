@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, possimus.</p>
+
+    <button id="goster" type="button">Göster</button>
+    <button id="gizle" type="button">Gizle</button>
+    <!-- goster-gizle tek buton --> 
+    <button id="toggle" type="button">Toggle</button>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#goster").click(function() {
+                $("p").show("speed");
+            });
+
+            $("#gizle").click(function() {
+                $("p").hide(5000);
+            });
+
+            $("#toggle").click(function() {
+                $("p").toggle();
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

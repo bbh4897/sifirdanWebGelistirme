@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, possimus.</p>
+
+    <button id="fadeIn" type="button">FadeIn</button>
+    <button id="fadeTo" type="button">FadeTo</button>
+    <button id="fadeOut" type="button">FadeOut</button>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#fadeIn").click(function() {
+                $("p").fadeIn("slow");
+            });
+
+            $("#fadeTo").click(function() {
+                $("p").fadeTo("slow",0.3);
+            });
+
+            $("#fadeOut").click(function() {
+                $("p").fadeOut(1000, function(){
+                    alert("Hello World!");
+                });
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
