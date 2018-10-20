@@ -24,5 +24,10 @@ namespace HtmlContent_Banzhow.Controllers
             return View();
         }
 
+        public ActionResult Faq()
+        {
+            return View();
+        }
+
     }
 }
