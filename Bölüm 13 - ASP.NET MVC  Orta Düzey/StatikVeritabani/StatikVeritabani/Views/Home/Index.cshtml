@@ -1,0 +1,13 @@
+﻿@using StatikVeritabani.Models;
+@model UrunKategori
+@{
+    ViewBag.Title = "Index";
+}
+
+<ul>
+    @foreach (var item in Model.Urunler)
+    {
+        <li>@item.UrunAd</li>
+    }
+</ul>
+
