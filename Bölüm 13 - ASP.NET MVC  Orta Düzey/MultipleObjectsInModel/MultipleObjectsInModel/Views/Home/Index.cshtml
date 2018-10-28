@@ -1,0 +1,21 @@
+﻿@using MultipleObjectsInModel.Models;
+@model UrunKAtegori
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Urun Kategoriler</h2>
+<ul>
+    @foreach (var item in Model.Urunler)
+    {
+        <li>@item.UrunId ***** @item.UrunAdi ***** @item.Aciklama</li>
+    }
+</ul>
+
+
+<ul>
+    @foreach (var item in Model.Kategoriler)
+    {
+        <li>@item.KategoriId ***** @item.KategoriAdi</li>
+    }
+</ul>

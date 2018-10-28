@@ -1,0 +1,14 @@
+﻿@model string[]
+@{
+    ViewBag.Title = "Index";
+}
+
+<ul>
+
+    @foreach (var item in Model) // Normalde Model'ın basına @ gelmelı fakat sayfa basında zaten foreach dan dolayı oldugu ıcın yazılmadı
+    {
+        <li>@item</li>
+    }
+
+</ul>
+

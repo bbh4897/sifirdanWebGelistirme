@@ -1,0 +1,16 @@
+﻿@model List<ModelList.Models.Urun>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ürünler</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.UrunId</li>
+        <li>@item.UrunAdi</li>
+        <li>@item.Aciklama</li>
+        <li>@item.Satistami</li>
+    }
+</ul>
