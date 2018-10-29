@@ -8,6 +8,7 @@ namespace EntitiyFrameworkUygulama
 {
     public class Urun
     {
+        //Varsayılan olarak otomatik sayı olarak ayarlanır. PrimaryKey olarak ayarlanır.(ısmı Id olmalı)
         public int Id { get; set; } // Özellikle Id adını almalı
         public string urunAdi { get; set; }
         public double Fiyat { get; set; }
