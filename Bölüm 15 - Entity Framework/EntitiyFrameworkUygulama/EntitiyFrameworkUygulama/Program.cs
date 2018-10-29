@@ -100,24 +100,46 @@ namespace EntitiyFrameworkUygulama
 
             // Updating Data
 
+            // VtContext context = new VtContext();
+            // var u = context.Urunler.Find(2);
+            // Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
+
+            // u.Fiyat = 750;
+            // u.urunAdi = "Samsung S4 - Eski";
+
+            // context.SaveChanges();
+            // Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
+
+            //// Her urunun fıyatına zam yapalım
+
+            // var urunler = context.Urunler.ToList();
+            // foreach (var item in urunler)
+            // {
+            //     item.Fiyat = item.Fiyat + 550;
+            // }
+            // context.SaveChanges();
+
+            // ******************************************************************************************************************************//
+
+            // Deleting Data
+
             VtContext context = new VtContext();
-            var u = context.Urunler.Find(2);
-            Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
-
-            u.Fiyat = 750;
-            u.urunAdi = "Samsung S4 - Eski";
-
+            var urun = context.Urunler.Find(4);
+            if (urun != null)
+            {
+                context.Urunler.Remove(urun);
+            }
             context.SaveChanges();
-            Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
 
-           // Her urunun fıyatına zam yapalım
+           // Tum urunlerı sılme
           
             var urunler = context.Urunler.ToList();
             foreach (var item in urunler)
             {
-                item.Fiyat = item.Fiyat + 550;
+                context.Urunler.Remove(item);
             }
             context.SaveChanges();
+
         }
     }
 }
