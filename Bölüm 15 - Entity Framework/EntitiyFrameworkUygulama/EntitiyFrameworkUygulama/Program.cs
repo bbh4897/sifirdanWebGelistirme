@@ -61,21 +61,39 @@ namespace EntitiyFrameworkUygulama
             //context.SaveChanges();
 
             // Liste Seklınde daha kolay tanımlanabılır.
-            VtContext context = new VtContext();
-            List<Urun> urunler = new List<Urun>()
-            {
-                new Urun(){Id=1, urunAdi="Iphone 7", Fiyat=3500.0,stok=1000},
-                new Urun(){Id=2, urunAdi="Iphone 6", Fiyat=1500.0,stok=10},
-                new Urun(){Id=3, urunAdi="SAmsung S-7", Fiyat=3000.0,stok=2000},
-                new Urun(){Id=4, urunAdi="Samsung Note3", Fiyat=2700,stok=0},
-                new Urun(){Id=5, urunAdi="Iphone x", Fiyat=15500.0,stok=1000},
-            };
+            //VtContext context = new VtContext();
+            //List<Urun> urunler = new List<Urun>()
+            //{
+            //    new Urun(){Id=1, urunAdi="Iphone 7", Fiyat=3500.0,stok=1000},
+            //    new Urun(){Id=2, urunAdi="Iphone 6", Fiyat=1500.0,stok=10},
+            //    new Urun(){Id=3, urunAdi="SAmsung S-7", Fiyat=3000.0,stok=2000},
+            //    new Urun(){Id=4, urunAdi="Samsung Note3", Fiyat=2700,stok=0},
+            //    new Urun(){Id=5, urunAdi="Iphone x", Fiyat=15500.0,stok=1000},
+            //};
 
-            foreach (var item in urunler)
+            //foreach (var item in urunler)
+            //{
+            //    context.Urunler.Add(item);
+            //}
+            //context.SaveChanges();
+
+
+            // ******************************************************************************************************************************//
+
+            //Urun Listeletme
+
+            VtContext context = new VtContext();
+
+            List<Kategori> kategoriler = context.Kategoriler.ToList(); // ToList() olmak zorunda.
+            // var kategoriler = context.Kategoriler.ToList(); AYNI ŞEY
+            foreach (var item in kategoriler)
             {
-                context.Urunler.Add(item);
+                Console.WriteLine("Kategori Id : {0}, Kategori Adı : {1}", item.Id , item.kategoriAdi);
             }
-            context.SaveChanges();
+
+            // Tek bır elemanı secme. Ornegın ıd=5 olanı getır (Fıltreleme)
+            var u = context.Urunler.Find(2);
+            Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
         }
     }
 }
