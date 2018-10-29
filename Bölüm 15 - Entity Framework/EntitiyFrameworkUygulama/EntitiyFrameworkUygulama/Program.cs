@@ -82,18 +82,42 @@ namespace EntitiyFrameworkUygulama
 
             //Urun Listeletme
 
+            //VtContext context = new VtContext();
+
+            //List<Kategori> kategoriler = context.Kategoriler.ToList(); // ToList() olmak zorunda.
+            //// var kategoriler = context.Kategoriler.ToList(); AYNI ŞEY
+            //foreach (var item in kategoriler)
+            //{
+            //    Console.WriteLine("Kategori Id : {0}, Kategori Adı : {1}", item.Id , item.kategoriAdi);
+            //}
+
+            //// Tek bır elemanı secme. Ornegın ıd=5 olanı getır (Fıltreleme)
+            //var u = context.Urunler.Find(2);
+            //Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
+
+
+            // ******************************************************************************************************************************//
+
+            // Updating Data
+
             VtContext context = new VtContext();
-
-            List<Kategori> kategoriler = context.Kategoriler.ToList(); // ToList() olmak zorunda.
-            // var kategoriler = context.Kategoriler.ToList(); AYNI ŞEY
-            foreach (var item in kategoriler)
-            {
-                Console.WriteLine("Kategori Id : {0}, Kategori Adı : {1}", item.Id , item.kategoriAdi);
-            }
-
-            // Tek bır elemanı secme. Ornegın ıd=5 olanı getır (Fıltreleme)
             var u = context.Urunler.Find(2);
             Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
+
+            u.Fiyat = 750;
+            u.urunAdi = "Samsung S4 - Eski";
+
+            context.SaveChanges();
+            Console.WriteLine("Urun Id : {0}, Urun Adı : {1}, Fiyat : {2}, Stok : {3}", u.Id, u.urunAdi, u.Fiyat, u.stok);
+
+           // Her urunun fıyatına zam yapalım
+          
+            var urunler = context.Urunler.ToList();
+            foreach (var item in urunler)
+            {
+                item.Fiyat = item.Fiyat + 550;
+            }
+            context.SaveChanges();
         }
     }
 }
