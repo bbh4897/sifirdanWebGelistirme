@@ -9,6 +9,10 @@ namespace EntitiyFrameworkUygulama
 {
     public class VtContext : DbContext
     {
+        public VtContext() : base("urunConnection")
+        {
+                
+        }
         public DbSet<Urun> Urunler { get; set; } // Daha once UrunKategori.cs Sınıfında yapmıstık (List<Urun>...)
         public DbSet<Kategori> Kategoriler { get; set; }
     }
