@@ -1,4 +1,5 @@
 ﻿
+using BlogMVCApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,11 @@ namespace BlogMVCApp.Controllers
 {
     public class HomeController : Controller
     {
+        private BlogContext context = new BlogContext();
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            return View(context.Bloglar.ToList());
         }
     }
 }
