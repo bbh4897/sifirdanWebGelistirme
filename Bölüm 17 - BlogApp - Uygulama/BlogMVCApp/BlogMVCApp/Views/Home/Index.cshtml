@@ -8,10 +8,11 @@
 <hr />
 
 
-@Html.Partial("BlogListesi",Model)
+@Html.Partial("BlogListesi", Model)
 
 @section SagKolon
 {
+    @Html.Partial("Search")
     @{ Html.RenderAction("KategoriListesi", "Category");}
 }
 

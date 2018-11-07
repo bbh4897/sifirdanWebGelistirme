@@ -152,6 +152,7 @@
     <Content Include="Views\Category\KategoriListesi.cshtml" />
     <Content Include="Views\Blog\List.cshtml" />
     <Content Include="Views\Shared\BlogListesi.cshtml" />
+    <Content Include="Views\Shared\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

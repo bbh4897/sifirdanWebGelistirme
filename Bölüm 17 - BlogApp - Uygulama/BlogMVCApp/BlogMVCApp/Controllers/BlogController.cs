@@ -14,14 +14,14 @@ namespace BlogMVCApp.Controllers
     {
         private BlogContext db = new BlogContext();
 
-        public ActionResult List(int? id)
+        public ActionResult List(int? id, string q)
         {
             var bloglar = db.Bloglar
                 .Where(i => i.Onay == true)
                 .Select(i => new BlogModel()
                 {
                     Id = i.Id,
-                    Baslik = i.Baslik.Length > 10 ? i.Baslik.Substring(0, 10) + "..." : i.Baslik,
+                    Baslik = i.Baslik.Length > 20? i.Baslik.Substring(0, 20) + "..." : i.Baslik,
                     Resim = i.Resim,
                     EklenmeTarihi = i.EklenmeTarihi,
                     Onay = i.Onay,
@@ -29,6 +29,11 @@ namespace BlogMVCApp.Controllers
                     Aciklama = i.Aciklama,
                     CategoryId = i.CategoryId
                 }).AsQueryable();
+
+            if (string.IsNullOrEmpty("q") == false)
+            {
+                bloglar = bloglar.Where(i => i.Baslik.Contains(q) || i.Aciklama.Contains(q));
+            }
 
             if (id != null)
             {
