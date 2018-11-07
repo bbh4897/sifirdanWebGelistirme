@@ -7,33 +7,63 @@
 
 <hr />
 
-<div class="row">
-    <div class="col-md-8">
 
-        @foreach (var blog in Model)
-        {
-        <div class="blog">
-            <h3 class="page-header">
-                @blog.Baslik
-            </h3>
-            <p>
-                <span class="glyphicon glyphicon-time"></span>
-                @blog.EklenmeTarihi
-            </p>
-            <hr />
-            <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
-            <hr />
-            <p>
-                @blog.Aciklama
-            </p>
-            @Html.ActionLink("Daha Fazla...", "Details", "Blog", new { id = @blog.Id }, new{ @class= "btn btn-primary" })
+
+@foreach (var blog in Model)
+{
+    <div class="blog">
+        <h3 class="page-header">
+            @blog.Baslik
+        </h3>
+        <p>
+            <span class="glyphicon glyphicon-time"></span>
+            @blog.EklenmeTarihi
+        </p>
+        <hr />
+        <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+        <hr />
+        <p>
+            @blog.Aciklama
+        </p>
+        @Html.ActionLink("Daha Fazla...", "Details", "Blog", new { id = @blog.Id }, new { @class = "btn btn-primary" })
+    </div>
+}
+
+@section SagKolon
+    {
+    <div class="well">
+        <h4>Blog Kategorisi</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        }
+    </div>
+    <div class="well">
+        <h4>Blog Kategorisi</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </div>
+}
 
-    <div class="col-md-4" style="background-color:red"> <!-- Daha sonra doldurulacak-->
-        klşklkşk
-    </div>
-</div>
+
+
 

@@ -3,68 +3,94 @@
 @{
     ViewBag.Title = "Details";
 }
-<div class="row">
-    <div class="col-md-8">
 
-        <h1>@Model.Baslik</h1>
-        <hr />
+<h1>@Model.Baslik</h1>
+<hr />
 
-        <p>
-            <span class="glyphicon glyphicon-time"></span>
-            @Model.EklenmeTarihi
-        </p>
-        <hr />
+<p>
+    <span class="glyphicon glyphicon-time"></span>
+    @Model.EklenmeTarihi
+</p>
+<hr />
 
-        <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
-        <hr />
+<img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+<hr />
 
-        <blockquote>
-            <p>@Model.Aciklama</p>
-        </blockquote>
+<blockquote>
+    <p>@Model.Aciklama</p>
+</blockquote>
 
-        <p>
-            @Model.Icerik
-        </p>
-        <hr />
-        <div class="comment">
-            <hr />
-            <div class="well">
-                <h4>Yorum Yap</h4>
-                <form role="form">
-                    <div class="form-group">
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Gönder</button>
-                </form>
+<p>
+    @Model.Icerik
+</p>
+<hr />
+<div class="comment">
+    <hr />
+    <div class="well">
+        <h4>Yorum Yap</h4>
+        <form role="form">
+            <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
             </div>
-            <hr />
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+    <hr />
 
-            <div class="media">
-                <img class="mr-3" src="http://placehold.it/100x100" alt="Generic placeholder image">
+    <div class="media">
+        <img class="mr-3" src="http://placehold.it/100x100" alt="Generic placeholder image">
+        <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+            <div class="media mt-3">
+                <a class="pr-3" href="#">
+                    <img src="http://placehold.it/100x100" alt="Generic placeholder image">
+                </a>
                 <div class="media-body">
                     <h5 class="mt-0">Media heading</h5>
                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-                    <div class="media mt-3">
-                        <a class="pr-3" href="#">
-                            <img src="http://placehold.it/100x100" alt="Generic placeholder image">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="mt-0">Media heading</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        </div>
-                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section SagKolon
+    {
+    <div class="well">
+        <h4>Blog Kategorisi</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="well">
+        <h4>Blog Kategorisi</h4>
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategori Adı</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
     </div>
-
-    <div class="col-md-4">
-
-    </div>
-
-</div>
+}
 
 
 
