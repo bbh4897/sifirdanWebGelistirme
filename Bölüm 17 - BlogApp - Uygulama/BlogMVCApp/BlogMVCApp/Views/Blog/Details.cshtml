@@ -58,38 +58,8 @@
 
 
 @section SagKolon
-    {
-    <div class="well">
-        <h4>Blog Kategorisi</h4>
-        <div class="row">
-            <div class="col-lg-6">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Kategori Adı</a>
-                    </li>
-                    <li>
-                        <a href="#">Kategori Adı</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="well">
-        <h4>Blog Kategorisi</h4>
-        <div class="row">
-            <div class="col-lg-6">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Kategori Adı</a>
-                    </li>
-                    <li>
-                        <a href="#">Kategori Adı</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
+{
+    @{ Html.RenderAction("KategoriListesi", "Category");}
 }
 
 
