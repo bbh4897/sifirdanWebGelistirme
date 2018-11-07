@@ -83,14 +83,29 @@ namespace BlogMVCApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Baslik,Aciklama,Resim,Icerik,EklenmeTarihi,Onay,Anasayfa,CategoryId")] Blog blog)
+        public ActionResult Edit([Bind(Include = "Id,Baslik,Aciklama,Resim,Icerik,Onay,Anasayfa,CategoryId")] Blog blog)
         {
             if (ModelState.IsValid)
-            {
-                db.Entry(blog).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+            { 
+                //db.Entry(blog).State = EntityState.Modified;
+
+                var entity = db.Bloglar.Find(blog.Id);
+                if (entity != null)
+                {
+                    entity.Baslik = blog.Baslik;
+                    entity.Aciklama = blog.Aciklama;
+                    entity.Resim = blog.Resim;
+                    entity.Icerik = blog.Icerik;
+                    entity.Onay = blog.Onay;
+                    entity.Anasayfa = blog.Anasayfa;
+                    entity.CategoryId = blog.CategoryId;
+
+                    db.SaveChanges();
+
+                    TempData["Blog"] = entity;
+                    return RedirectToAction("Index");
+                }
+             }
             ViewBag.CategoryId = new SelectList(db.Kategoriler, "Id", "kategoriAdi", blog.CategoryId);
             return View(blog);
         }
