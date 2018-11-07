@@ -15,7 +15,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Category.kategoriAdi)
         </th>
-        <th>
+        <th style="width:100px;">
             @Html.DisplayNameFor(model => model.Baslik)
         </th>
         <th>
@@ -65,7 +65,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Anasayfa)
         </td>
-        <td>
+        <td style="padding-left:25px;">
             @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-warning" }) |
             @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-primary" }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
