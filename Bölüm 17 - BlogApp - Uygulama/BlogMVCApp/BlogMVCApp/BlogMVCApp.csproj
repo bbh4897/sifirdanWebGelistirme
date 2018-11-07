@@ -153,6 +153,7 @@
     <Content Include="Views\Blog\List.cshtml" />
     <Content Include="Views\Shared\BlogListesi.cshtml" />
     <Content Include="Views\Shared\Search.cshtml" />
+    <Content Include="Views\Blog\ListSearch.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

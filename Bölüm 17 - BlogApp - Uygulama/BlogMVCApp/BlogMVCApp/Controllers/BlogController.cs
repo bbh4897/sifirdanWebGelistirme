@@ -14,7 +14,7 @@ namespace BlogMVCApp.Controllers
     {
         private BlogContext db = new BlogContext();
 
-        public ActionResult List(int? id, string q)
+        public ActionResult List(int? id)
         {
             var bloglar = db.Bloglar
                 .Where(i => i.Onay == true)
@@ -22,6 +22,29 @@ namespace BlogMVCApp.Controllers
                 {
                     Id = i.Id,
                     Baslik = i.Baslik.Length > 20? i.Baslik.Substring(0, 20) + "..." : i.Baslik,
+                    Resim = i.Resim,
+                    EklenmeTarihi = i.EklenmeTarihi,
+                    Onay = i.Onay,
+                    Anasayfa = i.Anasayfa,
+                    Aciklama = i.Aciklama,
+                    CategoryId = i.CategoryId
+                }).AsQueryable();
+
+            if (id != null)
+            {
+                bloglar = bloglar.Where(i => i.CategoryId == id);
+            }
+            return View(bloglar.ToList());
+        }
+
+        public ActionResult ListSearch(int?id,string q)
+        {
+            var bloglar = db.Bloglar
+                .Where(i => i.Onay == true)
+                .Select(i => new BlogModel()
+                {
+                    Id = i.Id,
+                    Baslik = i.Baslik.Length > 20 ? i.Baslik.Substring(0, 20) + "..." : i.Baslik,
                     Resim = i.Resim,
                     EklenmeTarihi = i.EklenmeTarihi,
                     Onay = i.Onay,
@@ -41,7 +64,7 @@ namespace BlogMVCApp.Controllers
             }
             return View(bloglar.ToList());
         }
-        
+
 
         // GET: Blog
         public ActionResult Index()
