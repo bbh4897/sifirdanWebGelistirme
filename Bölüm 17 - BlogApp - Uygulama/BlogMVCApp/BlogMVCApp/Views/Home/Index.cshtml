@@ -23,7 +23,10 @@
             <hr />
             <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
             <hr />
-            <button class="btn btn-primary">Daha Fazla..</button>
+            <p>
+                @blog.Aciklama
+            </p>
+            @Html.ActionLink("Daha Fazla...", "Details", "Blog", new { id = @blog.Id }, new{ @class= "btn btn-primary" })
         </div>
         }
 

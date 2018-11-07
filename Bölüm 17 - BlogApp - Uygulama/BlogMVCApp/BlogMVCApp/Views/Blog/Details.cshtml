@@ -3,80 +3,72 @@
 @{
     ViewBag.Title = "Details";
 }
+<div class="row">
+    <div class="col-md-8">
 
-<h2>Details</h2>
+        <h1>@Model.Baslik</h1>
+        <hr />
 
-<div>
-    <h4>Blog</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.kategoriAdi)
-        </dt>
+        <p>
+            <span class="glyphicon glyphicon-time"></span>
+            @Model.EklenmeTarihi
+        </p>
+        <hr />
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.kategoriAdi)
-        </dd>
+        <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+        <hr />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Baslik)
-        </dt>
+        <blockquote>
+            <p>@Model.Aciklama</p>
+        </blockquote>
 
-        <dd>
-            @Html.DisplayFor(model => model.Baslik)
-        </dd>
+        <p>
+            @Model.Icerik
+        </p>
+        <hr />
+        <div class="comment">
+            <hr />
+            <div class="well">
+                <h4>Yorum Yap</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+            <hr />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Aciklama)
-        </dt>
+            <div class="media">
+                <img class="mr-3" src="http://placehold.it/100x100" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
-        <dd>
-            @Html.DisplayFor(model => model.Aciklama)
-        </dd>
+                    <div class="media mt-3">
+                        <a class="pr-3" href="#">
+                            <img src="http://placehold.it/100x100" alt="Generic placeholder image">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Resim)
-        </dt>
+    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Resim)
-        </dd>
+    <div class="col-md-4">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Icerik)
-        </dt>
+    </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Icerik)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.EklenmeTarihi)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.EklenmeTarihi)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Onay)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Onay)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Anasayfa)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Anasayfa)
-        </dd>
-
-    </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+
+
+
+
+
+
