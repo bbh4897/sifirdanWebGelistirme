@@ -1,0 +1,20 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav-list">
+                <li> @Html.ActionLink("Anasayfa", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+                <li> @Html.ActionLink("Hakkımızda", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+                <li> @Html.ActionLink("İletişim", "Contact", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
+            </ul>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav"></ul>
+        </div>
+    </div>
+</div>
