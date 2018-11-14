@@ -1,0 +1,12 @@
+﻿@model List<GenelUygulama.Models.Kategori>
+
+<h1>Partial View Ornek</h1>
+
+<h3>Kategori Menu</h3>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>@item.kategoriAdi</li>
+    </ul>
+}

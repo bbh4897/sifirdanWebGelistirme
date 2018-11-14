@@ -1,0 +1,21 @@
+﻿@model List<GenelUygulama.Models.Urun>
+@{
+                /**/
+
+                ViewBag.Title = "About";
+}
+
+<h2>Ürünler</h2>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>@item.urunId</li>
+        <li>@item.urunAdi</li>
+        <li>@item.fiyat</li>
+    </ul>
+    <hr>
+}
+
+
+

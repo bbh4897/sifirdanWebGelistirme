@@ -1,0 +1,24 @@
+﻿@model gu_KategoriMenu_PV.Models.urunKategori
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+
+    <div class="col-md-3">
+        @Html.Action("KategoriMenu","KAtegori")
+    </div>
+
+    <div class="col-md-9">
+        <h3>Urunler</h3>
+        @foreach (var item in Model.Urunler)
+        {
+            <ul>
+                <li>@item.urunAdi</li>
+            </ul>
+        }
+    </div>
+</div>
+

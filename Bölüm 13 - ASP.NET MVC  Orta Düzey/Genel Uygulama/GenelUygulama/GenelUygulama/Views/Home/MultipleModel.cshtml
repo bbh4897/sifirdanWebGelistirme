@@ -1,0 +1,24 @@
+﻿@model GenelUygulama.Models.UrunKategori
+@{
+    ViewBag.Title = "MultipleModel";
+}
+
+<h2>MultipleModel</h2>
+
+@foreach (var urun in Model.Urunler)
+{
+    <ul>
+        <li>@urun.urunId</li>
+        <li>@urun.urunAdi</li>
+    </ul>
+}
+
+
+@foreach (var kategori in Model.Kategoriler)
+{
+    <ul>
+        <li>@kategori.kategoriId</li>
+        <li>@kategori.kategoriAdi</li>
+    </ul>
+}
+
