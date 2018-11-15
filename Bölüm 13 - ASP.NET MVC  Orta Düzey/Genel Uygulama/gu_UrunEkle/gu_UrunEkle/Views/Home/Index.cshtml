@@ -1,0 +1,34 @@
+﻿@model List<gu_UrunEkle.Models.Urun>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<a class="btn btn-success" href="/Home/UrunEkle">Urun Ekle</a>
+<hr />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Urun Id</th>
+            <th>Urun Adı</th>
+            <th>Urun Fiyat</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.urunId</td>
+                <td>@item.urunAdi</td>
+                <td>@item.urunFiyat</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+
+
