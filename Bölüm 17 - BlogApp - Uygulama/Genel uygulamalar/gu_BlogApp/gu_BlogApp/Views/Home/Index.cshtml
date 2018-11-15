@@ -1,0 +1,42 @@
+﻿@model IEnumerable<gu_BlogApp.Models.Blog>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index / Blog Listesi</h2>
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Blog Id</th>
+            <th>Başlık</th>
+            <th>Açıklama</th>
+            <th>Resim</th>
+            <th>İçerik</th>
+            <th>Eklenme Tarihi</th>
+            <th>Onay</th>
+            <th>Anasayfa</th>
+            <th>Kategori Id</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Baslik</td>
+                <td>@item.Aciklama</td>
+                <td>@item.Resim</td>
+                <td>@item.Icerik</td>
+                <td>@item.EklenmeTarihi</td>
+                <td>@item.Onay</td>
+                <td>@item.Anasayfa</td>
+                <td>@item.kategoriId</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
