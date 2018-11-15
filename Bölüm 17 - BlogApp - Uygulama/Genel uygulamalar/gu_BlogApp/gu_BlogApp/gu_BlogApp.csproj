@@ -107,10 +107,16 @@
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\Kategoris\Create.cshtml" />
+    <Content Include="Views\Kategoris\Delete.cshtml" />
+    <Content Include="Views\Kategoris\Details.cshtml" />
+    <Content Include="Views\Kategoris\Edit.cshtml" />
+    <Content Include="Views\Kategoris\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KategorisController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
