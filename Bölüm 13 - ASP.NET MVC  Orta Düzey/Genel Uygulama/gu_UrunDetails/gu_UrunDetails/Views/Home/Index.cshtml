@@ -1,0 +1,35 @@
+﻿@model List<gu_UrunDetails.Models.Urun>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>Urun Id</th>
+            <th>Urun Adı</th>
+            <th>Urun Fiyat</th>
+            <th>Detay</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.urunId</td>            
+                <td>@item.urunAdi</td>           
+                <td>@item.urunFiyat</td>
+                <td><a class="btn btn-primary" href="/Home/Details/@item.urunId">Ürün İncele</a></td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+
+
