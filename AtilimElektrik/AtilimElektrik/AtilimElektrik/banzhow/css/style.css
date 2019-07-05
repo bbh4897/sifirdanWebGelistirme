@@ -192,13 +192,26 @@ blockquote p {
 
     .navbar-inverse .navbar-brand2 {
         font-family: cursive;
-        font-size: 20px;
-        line-height: 51px;
+        font-size: 15px;
+        line-height: 10px;
         color: #FFF;
         padding: 0 15px;
         margin: 8px 0 0px 0;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+    }
+    .navbar-inverse .navbar-brand3 {
+        font-family: MV Boli;
+        font-size: 40px;
+        line-height: 23px;
+        color: #FFF;
+        padding: 0 15px;
+        margin: 8px 0 0px 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .test{
+        color:white;
     }
 
 /*    ***********************************************  */
