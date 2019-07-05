@@ -189,11 +189,12 @@
     <Content Include="banzhow\css\fonts\pacifico\pacifico-webfont.woff" />
     <Content Include="banzhow\css\fonts\pacifico\pacifico-webfontd41d.eot" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Hakkimizda.cshtml" />
     <Content Include="Views\Home\Hizmetlerimiz.cshtml" />
-    <Content Include="Views\Home\Iletisim.cshtml" />
     <Content Include="Views\Home\Urunlerimiz.cshtml" />
+    <Content Include="Views\Home\Iletisim.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
