@@ -33,5 +33,40 @@ namespace AtilimElektrik.Controllers
         {
             return View();
         }
+
+        public ActionResult Galeri()
+        {
+            return View();
+        }
+
+        public ActionResult Arf()
+        {
+            return View();
+        }
+
+        public ActionResult Mt()
+        {
+            return View();
+        }
+
+        public ActionResult Haser()
+        {
+            return View();
+        }
+
+        public ActionResult Baransan()
+        {
+            return View();
+        }
+
+        public ActionResult IlkKazanim()
+        {
+            return View();
+        }
+
+        public ActionResult Cigkofte()
+        {
+            return View();
+        }
     }
 }

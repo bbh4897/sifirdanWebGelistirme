@@ -320,44 +320,20 @@ blockquote p {
   background: #3B5998;
 }
 
-.social-networks div.icon-social.icon-social-twitter.normal{
-  background: #00CEFD;
-}
+    .social-networks div.icon-social.icon-social-instagram.normal {
+        background: #3B5998;
+    }
 
 .social-networks div.icon-social.icon-social-google-plus.normal{
   background: #D64136;
 }
 
-.social-networks div.icon-social.icon-social-pinterest.normal{
-  background: #C32021;
-}
-
-.social-networks div.icon-social.icon-social-linkedin.normal{
-  background: #0077B5;
-}
-
-.social-networks div.icon-social.icon-social-youtube.normal{
-  background: #CF3427;
-}
 
 .social-networks div.icon-social.hover{
   background: #2c3e50;
 }
 
-.latest-tweets{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
-.latest-tweets li{
-  margin-bottom: 15px;
-}
-
-.latest-tweets i.fa.fa-twitter{
-  color: #00CEFD;
-  margin: 0 5px 0 0;
-}
 
 address i.fa{
   margin: 0 5px 0 0;
