@@ -105,7 +105,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #1ABC9C;
+  color: black;
   text-decoration: none;
 }
 
@@ -173,8 +173,8 @@ blockquote p {
 }
 
 .navbar-inverse {
-  background-color: #1ABC9C;
-  border-color: #16A085;
+  background-color: black;
+  border-color: black;
 }
 
 .navbar-inverse .navbar-brand{
@@ -194,7 +194,7 @@ blockquote p {
         font-family: cursive;
         font-size: 15px;
         line-height: 10px;
-        color: #FFF;
+        color: #eeb422;
         padding: 0 15px;
         margin: 8px 0 0px 0;
         -webkit-font-smoothing: antialiased;
@@ -204,7 +204,7 @@ blockquote p {
         font-family: MV Boli;
         font-size: 40px;
         line-height: 23px;
-        color: #FFF;
+        color: #eeb422;
         padding: 0 15px;
         margin: 8px 0 0px 0;
         -webkit-font-smoothing: antialiased;
@@ -217,52 +217,52 @@ blockquote p {
 /*    ***********************************************  */
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #fff;
-  padding: 18px 15px;
-  font-family: 'open_sansregular';
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+    color: #eeb422;
+    padding: 18px 15px;
+    font-family: 'open_sansregular';
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: #16A085;
-}
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+        color: #eeb422;
+        background-color: #363636;
+    }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-  color: #ffffff;
-  background-color: #16A085;
+    color: #eeb422;
+    background-color: #363636;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #16A085;
+    color: #eeb422;
+    background-color: #363636;
 }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  background-color: #16A085;
+    background-color: #363636;
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #16A085;
-  outline: none;
+    border-color: #363636;
+    outline: none;
 }
 
-.dropdown-menu{
-  background-color: #16A085;
-  border: none;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+.dropdown-menu {
+    background-color: #363636;
+    border: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
-.dropdown-menu > li > a{
-  color: #fff;
-}
+    .dropdown-menu > li > a {
+        color: #eeb422;
+    }
 
 .link-portfolio{
   overflow: hidden;
@@ -511,7 +511,7 @@ div.list-posts ul li a:hover{
 /* tags */
 
 .tags a{
-  background: #1ABC9C;
+  background: black;
   padding: 6px 15px;
   margin: 0 0 10px 0;
   display: inline-block;
@@ -568,7 +568,7 @@ div.list-posts ul li a:hover{
 }
 
 .label-default {
-  background-color: #1ABC9C;
+  background-color: black;
 }
 
 /* Buttons */
@@ -589,7 +589,7 @@ div.list-posts ul li a:hover{
 
 .btn-primary {
   color: #FFF;
-  background-color: #1ABC9C;
+  background-color: black;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary{
@@ -654,7 +654,7 @@ div.list-posts ul li a:hover{
 }
 
 .form-control:focus{
-  border-color: #1ABC9C;
+  border-color: black;
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -749,7 +749,7 @@ div.list-posts ul li a:hover{
   -moz-border-radius: 40px;
   text-align: center;
   font-size: 30px;
-  background: #1ABC9C;
+  background: black;
   color: #fff;
   line-height: 70px;
   margin: 0 auto;
@@ -841,7 +841,7 @@ img.monster{
 }
 
 .pricing-table .panel-default > .panel-body{
-  background-color: #1ABC9C;
+  background-color: black;
   color: #FFF;
 }
 
