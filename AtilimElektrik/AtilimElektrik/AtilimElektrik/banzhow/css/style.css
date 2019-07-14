@@ -101,7 +101,7 @@ body{
 }
 
 a {
-  color: #16A085;
+    color: white;
 }
 
 a:hover, a:focus {
@@ -852,11 +852,11 @@ img.monster{
 
 /* Footer Styles */
 footer {
-  background: #34495E;
-  padding: 50px 0;
-  color: #BDC3C7;
-  font-size: 12px;
-  line-height: 18px;
+    background: #997b6b;
+    padding: 50px 0;
+    color: #BDC3C7;
+    font-size: 12px;
+    line-height: 18px;
 }
 
 .footer-brand{

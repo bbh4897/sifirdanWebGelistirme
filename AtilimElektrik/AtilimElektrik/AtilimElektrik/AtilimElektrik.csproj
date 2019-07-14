@@ -494,6 +494,7 @@
     <Content Include="image\projeler\ilk_kazanim\ilk_kazanim_4.jpg" />
     <Content Include="image\projeler\mt muhendislik\mt_1.jpg" />
     <Content Include="image\teknik\slide1.jpg" />
+    <Content Include="image\teknik\slide2.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
