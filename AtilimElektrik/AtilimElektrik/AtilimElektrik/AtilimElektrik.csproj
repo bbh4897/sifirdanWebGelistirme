@@ -553,6 +553,7 @@
     <Content Include="Views\Home\Baransan.cshtml" />
     <Content Include="Views\Home\IlkKazanim.cshtml" />
     <Content Include="Views\Home\Cigkofte.cshtml" />
+    <Content Include="Views\Home\LedSpot.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

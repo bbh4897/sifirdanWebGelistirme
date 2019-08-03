@@ -29,6 +29,11 @@ namespace AtilimElektrik.Controllers
             return View();
         }
 
+        public ActionResult LedSpot()
+        {
+            return View();
+        }
+
         public ActionResult Iletisim()
         {
             return View();
