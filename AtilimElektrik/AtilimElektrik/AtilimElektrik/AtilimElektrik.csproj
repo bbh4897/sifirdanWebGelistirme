@@ -396,6 +396,7 @@
     <Content Include="image\avizeler\avize97.jpg" />
     <Content Include="image\avizeler\avize98.jpg" />
     <Content Include="image\avizeler\avize99.jpg" />
+    <Content Include="image\hakkimizda.jpg" />
     <Content Include="image\led\led1.jpg" />
     <Content Include="image\led\led10.jpg" />
     <Content Include="image\led\led100.jpg" />
@@ -606,6 +607,7 @@
     <Content Include="image\projeler\mt muhendislik\mt_1.jpg" />
     <Content Include="image\teknik\slide1.jpg" />
     <Content Include="image\teknik\slide2.jpg" />
+    <Content Include="image\teknik\slide3.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
