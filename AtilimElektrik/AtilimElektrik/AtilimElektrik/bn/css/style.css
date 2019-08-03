@@ -213,8 +213,11 @@ blockquote p {
         color:white;
     }
 
-/*    ***********************************************  */
+    .logonav{
+        margin-top:-27px;
 
+    }
+/*    ***********************************************  */
 .navbar-inverse .navbar-nav > li > a {
     color: #eeb422;
     padding: 18px 15px;
