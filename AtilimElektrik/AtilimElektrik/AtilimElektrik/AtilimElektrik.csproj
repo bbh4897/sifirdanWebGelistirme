@@ -476,6 +476,8 @@
     <Content Include="image\led\led98.jpg" />
     <Content Include="image\led\led99.jpg" />
     <Content Include="image\logo.jpg" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\logo2.png" />
     <Content Include="image\projeler\baransan\baransan_1.jpg" />
     <Content Include="image\projeler\baransan\baransan_10.jpg" />
     <Content Include="image\projeler\baransan\baransan_11.jpg" />
